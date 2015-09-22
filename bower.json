@@ -1,0 +1,25 @@
+{
+  "name": "www.graphalyzer.io",
+  "version": "0.0.0",
+  "authors": [
+    "Andrew Bowler <ajbowler@iastate.edu>",
+    "Al Gomez-Estrada <algomez@iastate.edu",
+    "Michael Sgroi <mcsgroi@iastate.edu",
+    "Taylor Welter <tdwelter@iastate.edu",
+    "Richard White <rwhite22@iastate.edu"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}
