@@ -69,10 +69,17 @@
           <hr>
           <h2 class="intro-text text-center">Our Team</h2>
           <hr>
+          <h3 class="intro-text text-center"><em>Click on a team member's photo to learn more</em></h3><br>
         </div>
         <row>
           <div class="col-sm-4 text-center">
-            <img class="img-responsive" src="img/andrew.jpg" alt="">
+            <img class="img-responsive" src="img/andrew.jpg" data-toggle="collapse" data-target="#andrew-info">
+            <div id="andrew-info" class="well collapse" aria-hidden="true">
+              <p><strong>Major: </strong>Software Engineering</p>
+              <p><strong>Email: </strong>ajbowler@iastate.edu</p>
+              <p><a href="http://ajbowler.github.io/website" target="_blank">Andrew's website</a></p>
+              <p><a href="http://github.com/ajbowler" target="_blank">Andrew's GitHub</a></p>
+            </div>
             <h3>Andrew Bowler<br>
               <small>Webmaster</small>
             </h3>
@@ -84,12 +91,19 @@
             </h3>
           </div>
           <div class="col-sm-4 text-center">
-            <img class="img-responsive" src="img/michael.jpg" alt="">
+            <img class="img-responsive" src="img/michael.jpg" data-toggle="collapse" data-target="#michael-info">
+            <div id="michael-info" class="well collapse" aria-hidden="true">
+              <p><strong>Major: </strong>Computer Engineering</p>
+              <p><strong>Email: </strong>mcsgroi@iastate.edu</p>
+              <p><a href="http://mcsgroi.xyz/" target="_blank">Michael's website</a></p>
+              <p><a href="http://github.com/Penguinparty" target="_blank">Michael's GitHub</a></p>
+            </div>
             <h3>Michael Sgroi<br>
               <small>Key Concept Holder</small>
             </h3>
           </div>
         </row>
+        <row><h1 style="visibility: hidden;">Hide this</h1></row> <!-- This is hidden to give more space between rows -->
         <row>
           <div class="col-sm-2"></div>      
           <div class="col-sm-4 text-center">
