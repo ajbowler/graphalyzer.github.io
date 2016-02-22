@@ -74,9 +74,21 @@
           <hr class="visible-xs">
           <p>Graphalyzer is a graph visualizer and analysis tool. <strong>This project is a work in progress.</strong></p>
           <p>An Iowa State Senior Design joint project with <a href="http://www.workiva.com" title="">Workiva</a>, Graphalyzer transposes data into an interactive graphical visualization. User interaction with the graph gives more detailed results on the data itself.</p>
-          <p>More information (and pictures!) will be posted as this project is developed.</p>
-          <p><strong>Here's a photo of Graphalyzer as of the end of our first semester of work:</strong></p>
-          <img class="img-responsive" src="img/graphalyzer.jpg">
+        </div>
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="intro-text text-center">Features</h2>
+          <hr>
+          <hr class="visible-xs">
+          <h3>Filtering</h3>
+          <p>Graphalyzer allows the user to look for specific characteristics of the data they are trying to analyze. One easy and intuitive way the user can do this is through filtering. Filtering allows the user to specify properties they want to focus on. For example, if the user loads a graph describing a database of users with user IDs and timecodes, as well as other properties, and they want to only focus on members of the graph with user IDs greater than or less than a number they specify, Graphalyzer filters out nodes that do not meet the user's query.</p>
+          <img class="img-responsive" src="img/screenshots/filtering_numerical.jpg">
+          <br><br>
+          <p>The user can also filter out nodes that <em>don't have</em> a property. In this example, let's remove all the nodes that don't have a user ID.</p>
+          <img class="img-responsive" src="img/screenshots/filtering_remove.jpg">
+          <br><br>
+          <p>Finally, an easy way to search for a member of the graph is to filter nodes that have a property that <em>isn't equal</em> to a value. This is beneficial in cases where the user knows a member of the graph has a property equal to a certain value but does not know the specific name of that member.</p>
+          <img class="img-responsive" src="img/screenshots/filtering_equals.jpg">
         </div>
       </div>
     </div>
