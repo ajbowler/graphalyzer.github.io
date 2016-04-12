@@ -90,6 +90,11 @@
                 <h2>Searching</h2>
               </a>
             </li>
+            <li role="presentation">
+              <a href="#subgraphs" aria-controls="subgraphs" role="tab" data-toggle="tab">
+                <h2>Subgraphs</h2>
+              </a>
+            </li>
           </ul>
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="filtering">
@@ -108,6 +113,15 @@
               <br><br>
               <p>In this giant graph, we want to find Pikachu. In the search bar on the right, we specify the property, in this case <b>name</b>. Next, we specify the value, in this case <b>pikachu</b>. Graphalyzer finds Pikachu, focuses in on that node, and automatically selects it for the properties to display on the right.</p>
               <img class="img-responsive" src="img/screenshots/searching_after.jpg"> 
+            </div>
+            <div role="tabpanel" class="tab-pane" id="subgraphs">
+              <p>Graphalyzer doesn't have to draw the entire graph if the data is too large. One of the reasons why data can be hard to understand is because it is so large, even when looking at it in the form of a graph. Graphalyzer allows users to specify a subgraph of the data they want to see, starting from a source node, and exploring out to a certain depth of connectivity.</p>
+              <img class="img-responsive" src="img/screenshots/subgraphs_modal.jpg">
+              <br><br>
+              <p>Here, we load the Pokémon graph, but we provide a source node ID, in this case, the ID points to <b>Bulbasaur</b>. Next, we provide the depth of connectivity to be 1, before finally drawing the graph.</p>
+              <img class="img-responsive" src="img/screenshots/subgraphs_result.jpg">
+              <br><br>
+              <p>Here is our resulting graph. If the graph is explored, all of the outgoing nodes from Bulbasaur represent all of the moves it can learn, and the one incoming node is Ivysaur, Bulbasaur's evolution.</p>
             </div>
           </div>
         </div>
