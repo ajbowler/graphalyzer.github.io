@@ -98,28 +98,40 @@
           </ul>
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="filtering">
-              <p>Graphalyzer allows the user to look for specific characteristics of the data they are trying to analyze. One easy and intuitive way the user can do this is through filtering. Filtering allows the user to specify properties they want to focus on. For example, if the user loads a graph describing a database of users with user IDs and timecodes, as well as other properties, and they want to only focus on members of the graph with user IDs greater than or less than a number they specify, Graphalyzer filters out nodes that do not meet the user's query.</p>
-              <img class="img-responsive" src="img/screenshots/filtering_numerical.jpg">
+              <div class="col-lg-6">
+                <p>Graphalyzer allows the user to look for specific characteristics of the data they are trying to analyze. One easy and intuitive way the user can do this is through filtering. Filtering allows the user to specify properties they want to focus on. For example, if the user loads a graph describing a database of users with user IDs and timecodes, as well as other properties, and they want to only focus on members of the graph with user IDs greater than or less than a number they specify, Graphalyzer filters out nodes that do not meet the user's query.</p>
+              </div>
+              <img class="img-responsive" src="img/screenshots/filtering_numerical/settings.jpg">
+              <br>
+              <img class="img-responsive" src="img/screenshots/filtering_numerical/filtering_numerical.jpg">
               <br><br>
-              <p>The user can also filter out nodes that <em>don't have</em> a property. In this example, let's remove all the nodes that don't have a user ID.</p>
-              <img class="img-responsive" src="img/screenshots/filtering_remove.jpg">
+              <div class="col-lg-6">
+                <p>The user can also filter out nodes that <em>don't have</em> a property. In this example, let's remove all the nodes that don't have a user ID.</p>
+              </div>
+              <img class="img-responsive" src="img/screenshots/filtering_remove/settings.jpg">
+              <br>
+              <img class="img-responsive" src="img/screenshots/filtering_remove/filtering_remove.jpg">
               <br><br>
-              <p>Finally, an easy way to search for a member of the graph is to filter nodes that have a property that <em>isn't equal</em> to a value. This is beneficial in cases where the user knows a member of the graph has a property equal to a certain value but does not know the specific name of that member.</p>
-              <img class="img-responsive" src="img/screenshots/filtering_equals.jpg">              
+              <div class="col-lg-6">
+                <p>Finally, an easy way to search for a member of the graph is to filter nodes that have a property that <em>isn't equal</em> to a value. This is beneficial in cases where the user knows a member of the graph has a property equal to a certain value but does not know the specific name of that member.</p>
+              </div>
+              <img class="img-responsive" src="img/screenshots/filtering_equals/settings.jpg">
+              <br>
+              <img class="img-responsive" src="img/screenshots/filtering_equals/filtering_equals.jpg">              
             </div>
             <div role="tabpanel" class="tab-pane" id="searching">
               <p>Graphalyzer also allows the user to search for members of a graph. This is important for finding important data stored within the data, and finding all of its relationships. Graphalyzer makes this very easy to do by allowing the user to specify a property to search for, and the value of that property. The example below shows a very large Pokémon graph, with nodes representing the 151 Generation I Pokémon, as well as all Pokémon types and moves that exist in the game. The edges represent moves each Pokémon knows and their types. In total, this is a graph of thousands of nodes, and hundreds of thousands of edges, showing the power Graphalyzer has when visualizing graphs. The seemingly filled circle of grey comes from the sheer amount of edges.</p>
-              <img class="img-responsive" src="img/screenshots/searching_before.jpg">
+              <img class="img-responsive" src="img/screenshots/searching/searching_before.jpg">
               <br><br>
               <p>In this giant graph, we want to find Pikachu. In the search bar on the right, we specify the property, in this case <b>name</b>. Next, we specify the value, in this case <b>pikachu</b>. Graphalyzer finds Pikachu, focuses in on that node, and automatically selects it for the properties to display on the right.</p>
-              <img class="img-responsive" src="img/screenshots/searching_after.jpg"> 
+              <img class="img-responsive" src="img/screenshots/searching/searching_after.jpg"> 
             </div>
             <div role="tabpanel" class="tab-pane" id="subgraphs">
-              <p>Graphalyzer doesn't have to draw the entire graph if the data is too large. One of the reasons why data can be hard to understand is because it is so large, even when looking at it in the form of a graph. Graphalyzer allows users to specify a subgraph of the data they want to see, starting from a source node, and exploring out to a certain depth of connectivity.</p>
-              <img class="img-responsive" src="img/screenshots/subgraphs_modal.jpg">
+              <p>Graphalyzer doesn't have to draw the entire graph if the data is too large. One of the reasons why data can be hard to understand is <em>because</em> it is so large, even when looking at it in the form of a graph. Graphalyzer allows users to specify a subgraph of the data they want to see, starting from a source node, and exploring out to a certain depth of connectivity.</p>
+              <img class="img-responsive" src="img/screenshots/subgraphs/subgraphs_modal.jpg">
               <br><br>
               <p>Here, we load the Pokémon graph, but we provide a source node ID, in this case, the ID points to <b>Bulbasaur</b>. Next, we provide the depth of connectivity to be 1, before finally drawing the graph.</p>
-              <img class="img-responsive" src="img/screenshots/subgraphs_result.jpg">
+              <img class="img-responsive" src="img/screenshots/subgraphs/subgraphs_result.jpg">
               <br><br>
               <p>Here is our resulting graph. If the graph is explored, all of the outgoing nodes from Bulbasaur represent all of the moves it can learn, and the one incoming node is Ivysaur, Bulbasaur's evolution.</p>
             </div>
