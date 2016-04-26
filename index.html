@@ -72,9 +72,8 @@
           <h2 class="intro-text text-center">Graph Visualizer and Analysis Tool</h2>
           <hr>
           <hr class="visible-xs">
-          <p>Graphalyzer is a graph visualizer and analysis tool. <strong>This project is a work in progress.</strong></p>
-          <p>An Iowa State Senior Design joint project with <a href="http://www.workiva.com" title="">Workiva</a>, Graphalyzer transposes data into an interactive graphical visualization. User interaction with the graph gives more detailed results on the data itself.</p>
-        </div>
+          <p>An Iowa State Senior Design joint project with <a href="http://www.workiva.com" title="">Workiva</a>, Graphalyzer visualizes data of any context into an interactive graph. Users can perform basic analysis on the graph such as visual filtering, node searching, and even specify parameters to draw subgraphs.</p>
+          <p>Graphalyzer intends to be a completely lightweight and open source tool. The context of the data is arbitrary. As long as the data can be represented in the form of nodes and edges, the user can interact with it.</p>
         <div class="col-lg-12">
           <hr>
           <h2 class="intro-text text-center">Features</h2>
@@ -82,17 +81,24 @@
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active">
               <a href="#filtering" aria-controls="filtering" role="tab" data-toggle="tab">
-                <h2>Filtering</h2>
+                <h4>Filtering</h4>
               </a>
             </li>
             <li role="presentation">
               <a href="#searching" aria-controls="searching" role="tab" data-toggle="tab">
-                <h2>Searching</h2>
+                <h4>Searching</h4>
               </a>
             </li>
             <li role="presentation">
               <a href="#subgraphs" aria-controls="subgraphs" role="tab" data-toggle="tab">
-                <h2>Subgraphs</h2>
+                <h4>Subgraphs</h4>
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#export-url" aria-controls="export-url" role="tab" data-toggle="tab">
+                <h4>Exporting Analysis</h4>
+              </a>
+            </li>
               </a>
             </li>
           </ul>
@@ -134,6 +140,9 @@
               <img class="img-responsive" src="img/screenshots/subgraphs/subgraphs_result.jpg">
               <br><br>
               <p>Here is our resulting graph. If the graph is explored, all of the outgoing nodes from Bulbasaur represent all of the moves it can learn, and the one incoming node is Ivysaur, Bulbasaur's evolution.</p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="export-url">
+              <p>Sharing data is easy with Graphalyzer. If you want to share the work you've done on your graph, including filtering, searching, and subgraphs, simply click the <b>Export URL</b> button on the Dashboard. This copies an auto-generated web URL to your clipboard. Just paste this in an email, group chat, etc. to share this with another user, and when they load the page, Graphalyzer will automatically load to the state your graph was in.</p>
             </div>
           </div>
         </div>
